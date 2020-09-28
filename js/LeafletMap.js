@@ -6,11 +6,11 @@ function init(){
 	foo: 'bar'}).addTo(map);
 	
 	//服务地址
-	var url='localhost:8080/geoserver/LightWebGIS/wms' 
+	var url='http://39.100.31.4:8080/geoserver/LightWebGIS/wms' 
 	//构建图层属性
 	const bounderLayer = L.tileLayer.wms(url, {
 	//图层名称
-	layers: 'LightWebGIS:Search_Polygons', 
+	layers: 'LightWebGIS:Search_Polygon', 
 	//图层格式
 	format: "image/png",
 	//投影坐标系类型
