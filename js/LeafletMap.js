@@ -9,14 +9,14 @@ function init(){
 	var url='http://39.100.31.4:8080/geoserver/LightWebGIS/wms' 
 	//构建图层属性
 	const bounderLayer = L.tileLayer.wms(url, {
-	//图层名称
-	layers: 'LightWebGIS:Search_Polygon', 
-	//图层格式
-	format: "image/png",
-	//投影坐标系类型
-	crs: L.CRS.EPSG4326,
-	//透明度
-	opacity: 0.5,
-	transparent: true
+		//图层名称
+		layers: 'LightWebGIS:Search_Polygon', 
+		//图层格式
+		format: "image/png",
+		//投影坐标系类型
+		crs: L.CRS.EPSG4326,
+		//透明度
+		opacity: 0.5,
+		transparent: true
 	}).addTo(map);
 }
